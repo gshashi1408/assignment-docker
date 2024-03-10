@@ -4,7 +4,7 @@ resource "aws_instance" "Docker1" {
   instance_type = "t2.micro"
   key_name = "key2"
   tags = {
-    Name  = "ec2-test"
+    Name  = "Dockertestinstance-1"
     Location = "Mumbai"
   }
 
