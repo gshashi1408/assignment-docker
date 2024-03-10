@@ -1,5 +1,5 @@
 pipeline {
-    agent {docker { image 'my_terraform:1.0'}
+    agent {docker { image 'my-terraform-image'}
           }
 
     parameters {
@@ -18,7 +18,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 sh 'rm -rf assignment-docker' 
-                sh 'git clone "https://github.com/tarundanda147/assignment-docker.git"'
+                sh 'git clone "https://github.com/gshashi1408/assignment-docker.git"'
             }
         }
 
