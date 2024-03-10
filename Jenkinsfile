@@ -1,6 +1,6 @@
 pipeline {
     agent {
-            docker { image 'my-terraform-image'}
+            docker { image 'terraform'}
           }
 
     parameters {
